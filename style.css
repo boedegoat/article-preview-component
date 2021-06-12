@@ -85,17 +85,47 @@ body {
 
 .card-share-popup {
   position: absolute;
-  top: -180%;
-  left: -160%;
-  display: none;
+  bottom: 250%;
+  left: -270%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 
 .card-share-popup-content {
   position: fixed;
-  width: 150px;
-  height: 40px;
   background: var(--blue-4);
   border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-share-popup-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* make down triangle */
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--blue-4);
+}
+
+.card-share-label {
+  color: var(--blue-2);
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.card-share-link {
+  transition: 0.3s;
+}
+
+.card-share-link:hover {
+  transform: translateY(-15%);
 }
 
 .card-share-btn {
@@ -114,10 +144,18 @@ body {
   margin: auto;
 }
 
-.card-share-btn:hover {
-  background: var(--blue-4);
+.card-share.active .card-share-popup {
+  opacity: 1;
+  bottom: 350%;
+  visibility: visible;
 }
 
+.card-share.active .card-share-btn,
+.card-share-btn:hover {
+  background: var(--blue-3);
+}
+
+.card-share.active .card-share-btn svg,
 .card-share-btn:hover svg {
   fill: var(--blue-1);
 }
