@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --fsize: 13px;
+  --blue-4: hsl(217, 19%, 35%);
+  --blue-3: hsl(214, 17%, 51%);
+  --blue-2: hsl(212, 23%, 69%);
+  --blue-1: hsl(210, 46%, 95%);
+}
