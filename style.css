@@ -27,8 +27,8 @@ body {
   display: flex;
   background: #fff;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
 }
 
 .card-img {
@@ -78,8 +78,27 @@ body {
   color: var(--blue-2);
 }
 
-.card-share-btn {
+.card-share {
   margin-left: auto;
+  position: relative;
+}
+
+.card-share-popup {
+  position: absolute;
+  top: -180%;
+  left: -160%;
+  display: none;
+}
+
+.card-share-popup-content {
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  background: var(--blue-4);
+  border-radius: 10px;
+}
+
+.card-share-btn {
   width: 35px;
   height: 35px;
   border: none;
