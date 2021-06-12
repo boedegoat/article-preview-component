@@ -12,3 +12,93 @@
   --blue-2: hsl(212, 23%, 69%);
   --blue-1: hsl(210, 46%, 95%);
 }
+
+body {
+  background: var(--blue-1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 730px;
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card-img {
+  width: 286px;
+}
+
+.card-content {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fsize);
+}
+
+.card-header {
+  font-size: 1.5rem;
+  color: var(--blue-4);
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  color: var(--blue-3);
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.card-author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card-info {
+  margin-left: 1rem;
+}
+
+.card-author-name {
+  color: var(--blue-4);
+}
+
+.card-date {
+  color: var(--blue-2);
+}
+
+.card-share-btn {
+  margin-left: auto;
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--blue-1);
+  display: flex;
+}
+
+.card-share-btn svg {
+  pointer-events: none;
+  margin: auto;
+}
+
+.card-share-btn:hover {
+  background: var(--blue-4);
+}
+
+.card-share-btn:hover svg {
+  fill: var(--blue-1);
+}
