@@ -90,8 +90,7 @@ body {
   bottom: 250%;
   left: -270%;
   opacity: 0;
-  visibility: hidden;
-  transition-property: bottom, opacity, visibility;
+  transition-property: bottom, opacity;
   transition-duration: 0.3s;
 }
 
@@ -150,7 +149,6 @@ body {
 .card-share.active .card-share-popup {
   opacity: 1;
   bottom: 350%;
-  visibility: visible;
 }
 
 .card-share.active .card-share-btn,
