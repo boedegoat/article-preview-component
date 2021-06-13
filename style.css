@@ -91,7 +91,8 @@ body {
   left: -270%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition-property: bottom, opacity, visibility;
+  transition-duration: 0.3s;
 }
 
 .card-share-popup-content {
@@ -181,7 +182,7 @@ footer a:hover {
   color: var(--blue-2);
 }
 
-@media (max-width: 730px) {
+@media (max-width: 850px) {
   .card {
     flex-direction: column;
     margin: 2rem;
